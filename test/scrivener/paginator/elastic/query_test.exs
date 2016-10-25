@@ -19,7 +19,7 @@ defmodule Scrivener.Paginator.Elastic.IndexTest do
       create_posts
       Elastic.Index.refresh("posts")
 
-      page = %Elastic.Query{index: "posts", body: %{}} |> Scrivener.Elastic.Post.paginate
+      page = Post.search_query(%{}) |> Scrivener.Elastic.Post.paginate
 
       assert page.page_size == 5
       assert page.page_number == 1
@@ -31,7 +31,7 @@ defmodule Scrivener.Paginator.Elastic.IndexTest do
       create_posts
       Elastic.Index.refresh("posts")
 
-      page = %Elastic.Query{index: "posts", body: %{}}
+      page = Post.search_query(%{})
       |> Scrivener.Elastic.Post.paginate(%{"page_size" => 1, "page" => 2})
 
       assert page.page_size == 1

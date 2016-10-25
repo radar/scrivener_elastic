@@ -1,5 +1,7 @@
 %{"aws_auth": {:hex, :aws_auth, "0.6.1", "09d9855b1bbe1a6c6648fb7cafeda8351caf2c399132ae063de896d8f5baacc5", [:mix], []},
-  "elastic": {:hex, :elastic, "1.0.1", "be95bc4766764c7eb44dd248f6a593f95c3f9ba76fef4f30009fa5d404d79ef3", [:mix], [{:aws_auth, "~> 0.6.1", [hex: :aws_auth, optional: false]}, {:httpotion, "~> 3.0.2", [hex: :httpotion, optional: false]}, {:poison, "~> 2.0", [hex: :poison, optional: false]}]},
+  "earmark": {:hex, :earmark, "1.0.2", "a0b0904d74ecc14da8bd2e6e0248e1a409a2bc91aade75fcf428125603de3853", [:mix], []},
+  "elastic": {:hex, :elastic, "2.2.0", "73f1251f64f4414fee246b32191605f5d16139a8781fd68c2d9267713ac8f6e4", [:mix], [{:aws_auth, "~> 0.6.1", [hex: :aws_auth, optional: false]}, {:httpotion, "~> 3.0.2", [hex: :httpotion, optional: false]}, {:poison, "~> 2.0", [hex: :poison, optional: false]}]},
+  "ex_doc": {:hex, :ex_doc, "0.14.3", "e61cec6cf9731d7d23d254266ab06ac1decbb7651c3d1568402ec535d387b6f7", [:mix], [{:earmark, "~> 1.0", [hex: :earmark, optional: false]}]},
   "httpotion": {:hex, :httpotion, "3.0.2", "525b9bfeb592c914a61a8ee31fdde3871e1861dfe805f8ee5f711f9f11a93483", [:mix], [{:ibrowse, "~> 4.2", [hex: :ibrowse, optional: false]}]},
   "ibrowse": {:hex, :ibrowse, "4.2.2", "b32b5bafcc77b7277eff030ed32e1acc3f610c64e9f6aea19822abcadf681b4b", [:rebar3], []},
   "poison": {:hex, :poison, "2.2.0", "4763b69a8a77bd77d26f477d196428b741261a761257ff1cf92753a0d4d24a63", [:mix], []},
