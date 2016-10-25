@@ -32,12 +32,12 @@ defmodule ScrivenerElastic.Mixfile do
 
   defp package do
     [
-      name: :elastic_scrivener,
+      name: :scrivener_elastic,
       description: "Scrivener integration for Elastic",
       files: ["lib", "README*", "mix.exs"],
       maintainers: ["Ryan Bigg"],
       licenses: ["MIT"],
-      links: %{"GitHub" => "https://github.com/radar/elastic_scrivener"}
+      links: %{"GitHub" => "https://github.com/radar/scrivener_elastic"}
     ]
   end
 end
